@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASK PAGE</title>
+</head>
+<body>
+    <h2>  WELCOME TO MOBILE PRICE PREDICTION</h2>
+    <h3>Hope you have a pleasent expiernece</h3>
+    <form 
+     action="/predict" method="POST">
+    Enter ram = <input type="text" name="RAM" required="required"><br><br>
+    Enter rom = <input type="text" name="ROM" required="required"><br><br>
+    enter screen size = <input type="text" name="size" required="required"><br><br>
+    ENTER PRIMARY CAMERA = <input type="text" name="BACK" required="required"><br><br>
+    ENTER SECONDARY CAMERA = <input type="text" name="FRONT" required="required"><br><br>
+    ENTER BATTERY = <input type="text" name="BATTERY" required="required"><br><br>
+    <button> <input type = "submit" ></button>
+    <button> <input type= "reset" > </button>
+</form>
+<br><br>
+<h3>{{ sent_value }}</h3>
+</body>
+</html>
